@@ -14,9 +14,12 @@ You should be able to refactor 24 - 45 in `BooksGrid` with your custom hook to e
 
 2. Google books also accepts the ability to limit the amount of results via a parameter of `maxResults`. Add some more functionality to your custom hook/app to enable the amount of results to be limited
 
-### Extra
-
 3. Create a new hook named `usePublishersBooks`. This hook should accept a publisher and a limit as arguments.
    It should make a request using the `getPublishersBooks` api function (already created for you).
 
 Use this hook to update the modal when you click a book. The modal should show 3 books by the same publisher of the book.
+
+### Extra
+
+4. Add some routing and create a publishers page.
+   Use your `usePublishersBooks` hook to list books by different publishers
