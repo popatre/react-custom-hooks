@@ -16,13 +16,6 @@ const customStyles = {
 
 export default function BooksGrid({ query }) {
     const [modalIsOpen, setIsOpen] = useState(false);
-
-    function closeModal() {
-        setIsOpen(false);
-    }
-
-    /*****  refactor into a custom hook *****/
-
     const [books, setBooks] = useState([]);
     const [error, setError] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
@@ -42,7 +35,9 @@ export default function BooksGrid({ query }) {
             });
     }, [query]);
 
-    /***** ^^^  refactor into a custom hook *****/
+    function closeModal() {
+        setIsOpen(false);
+    }
 
     if (isLoading) return <p>Loading...</p>;
     if (error) return <p>Something went wrong...</p>;

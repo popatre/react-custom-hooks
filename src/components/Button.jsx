@@ -1,9 +1,5 @@
 import React from "react";
 
-export default function Button({ title, func }) {
-    const handleClick = () => {
-        func(`/volumes?q=${title}`);
-    };
-
-    return <button onClick={handleClick}>{title}</button>;
+export default function Button({ label, onClickFunc }) {
+    return <button onClick={onClickFunc}>{label}</button>;
 }
