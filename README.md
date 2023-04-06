@@ -16,8 +16,7 @@ You should be able to refactor 24 - 45 in `BooksGrid` with your custom hook to e
 
 ### Extra
 
-3. Clicking a book reveals a modal with the names of 3 of the publishers other books. In your hook, **create a function** named `fetchPublishersBooks`.
+3. Create a new hook named `usePublishersBooks`. This hook should accept a publisher and a limit as arguments.
+   It should make a request using the `getPublishersBooks` api function (already created for you).
 
-This function should accept the current publisher of the book clicked, and use the api function `getPublishersBooks` (already made for you) to get the names of 3 books by this publisher.
-
-These should then be displayed in the modal.
+Use this hook to update the modal when you click a book. The modal should show 3 books by the same publisher of the book.
