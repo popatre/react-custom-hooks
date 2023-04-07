@@ -21,5 +21,7 @@ Use this hook to update the modal when you click a book. The modal should show 3
 
 ### Extra
 
-4. Add some routing and create a route to a publishers page. `/publishers/:publisher`
-   Use your `usePublishersBooks` hook to list books by a specific publisher,
+4. Add some routing and create a route to a publishers page. `/publishers/:publisher`.
+   Use your `usePublishersBooks` hook to list books by a specific publisher.
+
+5. Create a hook named `useModal` which will handle the state/setting of state for the modal
