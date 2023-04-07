@@ -5,7 +5,7 @@ import QueryBar from "./components/QueryBar";
 import { useState } from "react";
 
 function App() {
-    const [query, setQuery] = useState("/volumes?q=quilting");
+    const [query, setQuery] = useState("quilting");
     return (
         <div className="App">
             <Header title="Book Store" />
