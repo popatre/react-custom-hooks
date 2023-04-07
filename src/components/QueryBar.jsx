@@ -4,12 +4,12 @@ import Button from "./Button";
 export default function QueryBar({ setQuery }) {
     return (
         <div>
-            <Button label="Quilting" onClickFunc={() => setQuery("quilting")} />
+            <Button label="Quilting" onClick={() => setQuery("quilting")} />
             <Button
                 label="Architecture"
-                onClickFunc={() => setQuery("architecture")}
+                onClick={() => setQuery("architecture")}
             />
-            <Button label="Coding" onClickFunc={() => setQuery("coding")} />
+            <Button label="Coding" onClick={() => setQuery("coding")} />
         </div>
     );
 }

@@ -1,3 +1,3 @@
-export default function Button({ label, onClickFunc }) {
-    return <button onClick={onClickFunc}>{label}</button>;
+export default function Button({ label, onClick }) {
+    return <button onClick={onClick}>{label}</button>;
 }
