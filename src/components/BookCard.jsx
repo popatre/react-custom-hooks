@@ -1,6 +1,6 @@
 export default function BookCard({ title, imgUrl, setIsOpen }) {
     const handleModal = () => {
-        setIsOpen((prevOpen) => !prevOpen);
+        setIsOpen(true);
     };
     return (
         <div onClick={handleModal}>
