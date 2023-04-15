@@ -19,7 +19,7 @@ You should be able to refactor `BooksGrid` with your custom hook to enable the c
 
 Use this hook to update the modal when you click a book. The modal should show 3 books by the same publisher of the book.
 
-4. Create a hook named `useModal` which will handle the state/setting of state for the modal
+4. Create a hook named `useModal` which will handle the state, as well as the functions to open/close the modal.
 
 ### Extra
 
