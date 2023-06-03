@@ -24,4 +24,8 @@ Use this hook to update the modal when you click a book. The modal should show 3
 ### Extra
 
 5. Add some routing and create a route to a publishers page. `/publishers/:publisher`.
-   Use your `usePublishersBooks` hook to list books by a specific publisher.
+   Use your `usePublishersBooks` hook to list books by a specific publisher. You should also re-use the BookCard component to display the publishers books.
+
+6. Currently the BookCard component displays a modal of publishers books when clicked. This hinders our ability to reuse this component (we might want other behaviour/ not a modal to be shown, when clicked in other places).
+
+Refactor it so that is displays a modal when clicked on the books page, but doesn't display a modal when used in the publishers page.
